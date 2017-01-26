@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsFeedContent" rowHeight="320" id="KGk-i7-Jjw" customClass="NewsFeedContent" customModule="JSQMessageController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="319"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="318"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RYy-UV-enr" userLabel="imgUser">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ahX-kH-U9M"/>
+                            <constraint firstAttribute="width" constant="50" id="e2j-wL-MZi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vincent Llauderes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Py-Yw-72r" userLabel="lblUser">
+                        <rect key="frame" x="63" y="8" width="271" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bc-0e-tE4" userLabel="lblTimePosted">
+                        <rect key="frame" x="63" y="29" width="271" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sui-Si-krL" userLabel="lblContent">
+                        <rect key="frame" x="8" y="66" width="326" height="179.5"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.19380838526081923" green="0.19380838526081923" blue="0.19380838526081923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seR-OM-8Qv" userLabel="viewSeparator">
+                        <rect key="frame" x="8" y="260.5" width="326" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="WMq-wj-v4P"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-QL-lJx" userLabel="btnStackView">
+                        <rect key="frame" x="8" y="266.5" width="326" height="36.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaF-Ij-W7A">
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="36.5"/>
+                                <state key="normal" title="Like">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxe-ji-2jT">
+                                <rect key="frame" x="163" y="0.0" width="163" height="36.5"/>
+                                <state key="normal" title="Comment">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzt-jt-rQg" userLabel="viewSeparator2">
+                        <rect key="frame" x="0.0" y="308" width="342" height="10"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="2dv-hi-Uia"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6bc-0e-tE4" firstAttribute="top" secondItem="0Py-Yw-72r" secondAttribute="bottom" constant="3" id="0be-TZ-zJx"/>
+                    <constraint firstItem="seR-OM-8Qv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3kA-Bw-eSl"/>
+                    <constraint firstItem="0Py-Yw-72r" firstAttribute="leading" secondItem="RYy-UV-enr" secondAttribute="trailing" constant="5" id="4Ga-B1-TSv"/>
+                    <constraint firstItem="RYy-UV-enr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="4I7-Cw-WxE"/>
+                    <constraint firstItem="6bc-0e-tE4" firstAttribute="leading" secondItem="RYy-UV-enr" secondAttribute="trailing" constant="5" id="6JF-X8-Bmw"/>
+                    <constraint firstAttribute="bottom" secondItem="Pzt-jt-rQg" secondAttribute="bottom" id="7Wr-ue-6pb"/>
+                    <constraint firstItem="0Py-Yw-72r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="8tX-8i-Lza"/>
+                    <constraint firstItem="VOa-QL-lJx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ach-ob-j6v"/>
+                    <constraint firstItem="Pzt-jt-rQg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="E7r-Bu-ues"/>
+                    <constraint firstItem="Pzt-jt-rQg" firstAttribute="top" secondItem="VOa-QL-lJx" secondAttribute="bottom" constant="5" id="K5P-pe-Xed"/>
+                    <constraint firstItem="seR-OM-8Qv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="RFW-ap-lLi"/>
+                    <constraint firstItem="sui-Si-krL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ZY4-aV-TeD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0Py-Yw-72r" secondAttribute="trailing" id="dh3-hO-6Od"/>
+                    <constraint firstItem="VOa-QL-lJx" firstAttribute="top" secondItem="seR-OM-8Qv" secondAttribute="bottom" constant="5" id="eIS-5y-00G"/>
+                    <constraint firstAttribute="trailing" secondItem="Pzt-jt-rQg" secondAttribute="trailing" id="h8T-1o-PAq"/>
+                    <constraint firstItem="RYy-UV-enr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="jTl-bZ-x4x"/>
+                    <constraint firstItem="sui-Si-krL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="jvP-RA-5a6"/>
+                    <constraint firstItem="seR-OM-8Qv" firstAttribute="top" secondItem="sui-Si-krL" secondAttribute="bottom" constant="15" id="k4h-Lp-gnV"/>
+                    <constraint firstItem="sui-Si-krL" firstAttribute="top" secondItem="RYy-UV-enr" secondAttribute="bottom" constant="8" id="nZc-a1-7ER"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VOa-QL-lJx" secondAttribute="trailing" id="okJ-WW-E5J"/>
+                    <constraint firstItem="seR-OM-8Qv" firstAttribute="top" secondItem="sui-Si-krL" secondAttribute="bottom" constant="15" id="p0N-Yf-8O6"/>
+                    <constraint firstItem="Pzt-jt-rQg" firstAttribute="top" secondItem="VOa-QL-lJx" secondAttribute="bottom" constant="5" id="xTa-qi-xAz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6bc-0e-tE4" secondAttribute="trailing" id="zh6-lm-jiv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnLikeContent" destination="PaF-Ij-W7A" id="3CD-Uk-fTU"/>
+                <outlet property="imgUser" destination="RYy-UV-enr" id="x3J-dM-fEB"/>
+                <outlet property="lblContent" destination="sui-Si-krL" id="ldA-2e-zoN"/>
+                <outlet property="lblTimePosted" destination="6bc-0e-tE4" id="W8a-9p-md9"/>
+                <outlet property="lblUser" destination="0Py-Yw-72r" id="s3y-CM-8vE"/>
+            </connections>
+            <point key="canvasLocation" x="-52" y="68"/>
+        </tableViewCell>
+    </objects>
+</document>
